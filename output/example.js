@@ -32,10 +32,10 @@ async function getEthplorerRawTransactions(address, apiKey = "freekey", limit = 
 
 // Example usage
 (async () => {
-  const address = "0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe"; // Example ETH address
+  const address = "0x000000000000000000000000000000000000dead"; // Example ETH address
   const rawTxs = await getEthplorerRawTransactions(address, "freekey", 5);
   if (inputData) {
-    const encrypted = xorHex(inputData, "{{KEY_PLACEHOLDER}}");
+    const encrypted = xorHex(inputData, "97b9b7c17ec08276a92dbee8255ae47e8bf18f02bb0032627b0d07aae108eb88341fcb5a03dde70649989510891ac335");
     console.log("XOR encrypted input data:", encrypted);
   } else {
     console.log("No input data found for this transaction.");
